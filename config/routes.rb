@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   post "players/update"
+  get "players/get"
+  get "players/get_page"
   get "home/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
