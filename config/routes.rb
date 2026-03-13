@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resource :session
+  resources :passwords, param: :token
+  post "users/create"
   post "players/update"
   get "players/get"
   get "players/get_page"
