@@ -34,9 +34,7 @@ class PlayersController < ApplicationController
 
   # Basic pagination token endpoint. paging_token is the id of a particular Player
   def get_page
-    # page_size, paging_token = params.expect(:page_size, :paging_token)
     page_size = params.expect(:page_size)
-    # paging_token = params.fetch(:paging_token)
     params.permit(:paging_token)
     paging_token = params[:paging_token]
     if not paging_token.blank?
